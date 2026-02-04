@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Star } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -18,6 +18,19 @@ export function Hero() {
 			</div>
 			<div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
 				<div className="space-y-4 bg-gradient-to-b from-background/80 via-background/70 to-background/60 rounded-lg p-8 md:p-12 backdrop-blur-sm">
+					<div className="flex items-center justify-center gap-2">
+						<div className="flex gap-1">
+							{[...Array(5)].map((_, i) => (
+								<Star
+									key={i}
+									className="w-4 h-4 fill-accent text-accent"
+								/>
+							))}
+						</div>
+						<span className="text-sm text-muted-foreground font-medium">
+							4.9/5 from 150+ clients
+						</span>
+					</div>
 					<h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
 						Crafting <span className="text-accent italic">UI/UX</span> &
 						building experiences
