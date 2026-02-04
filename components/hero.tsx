@@ -18,7 +18,6 @@ export function Hero() {
 			</div>
 			<div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
 				<div className="space-y-4 bg-gradient-to-b from-background/80 via-background/70 to-background/60 rounded-lg p-8 md:p-12 backdrop-blur-sm">
-				<div className="space-y-4">
 					<h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
 						Crafting <span className="text-accent italic">UI/UX</span> &
 						building experiences
@@ -27,7 +26,6 @@ export function Hero() {
 						I design and develop pixel-perfect digital products that blend
 						thoughtful design with robust engineering.
 					</p>
-				</div>
 				</div>
 
 				<div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
